@@ -15,6 +15,7 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         tripTableView.dataSource = self
+        tripTableView.delegate = self
     }
 
 
