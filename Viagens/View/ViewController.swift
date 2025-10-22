@@ -16,6 +16,8 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         tripTableView.dataSource = self
         tripTableView.delegate = self
+        
+        view.backgroundColor = UIColor(red: 30/255, green: 59/255, blue: 119/255, alpha: 1.00)
     }
 
 
