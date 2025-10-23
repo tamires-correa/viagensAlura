@@ -14,13 +14,10 @@ class ViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tripTableView.dataSource = self
-        tripTableView.delegate = self
+       settingsTableView()
         
         view.backgroundColor = UIColor(red: 30/255, green: 59/255, blue: 119/255, alpha: 1.00)
     }
-
-
 }
 
 
