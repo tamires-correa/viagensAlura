@@ -14,10 +14,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Okw-kU-dNB" userLabel="HeaderView">
-                    <rect key="frame" x="-293" y="0.0" width="1000" height="250"/>
+                    <rect key="frame" x="-10" y="0.0" width="434" height="250"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alura Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRT-Fm-6aD">
-                            <rect key="frame" x="313" y="50" width="148.33333333333337" height="32.333333333333343"/>
+                            <rect key="frame" x="30" y="50" width="148.33333333333334" height="32.333333333333343"/>
                             <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
@@ -27,7 +27,6 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="250" id="1pa-ml-azR"/>
                         <constraint firstItem="NRT-Fm-6aD" firstAttribute="top" secondItem="Okw-kU-dNB" secondAttribute="top" constant="50" id="SeT-2z-NQp"/>
-                        <constraint firstAttribute="width" constant="1000" id="btg-3d-gBw"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01W-vU-tqs" userLabel="BannerView">
@@ -84,8 +83,9 @@
                 <constraint firstItem="Okw-kU-dNB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AOI-dr-RlV"/>
                 <constraint firstItem="01W-vU-tqs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="Itu-B7-5pM"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="01W-vU-tqs" secondAttribute="trailing" constant="18" id="Ogw-x2-GYf"/>
-                <constraint firstItem="Okw-kU-dNB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="c2L-fq-vDz"/>
                 <constraint firstItem="NRT-Fm-6aD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="gtV-IY-59G"/>
+                <constraint firstItem="Okw-kU-dNB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-10" id="hT6-DL-48D"/>
+                <constraint firstAttribute="trailing" secondItem="Okw-kU-dNB" secondAttribute="trailing" constant="-10" id="sis-Od-kQn"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
