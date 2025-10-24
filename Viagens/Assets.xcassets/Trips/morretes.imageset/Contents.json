@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "buzios.jpg",
+      "filename" : "morretes.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "buzios@2x.jpg",
+      "filename" : "morretes@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "buzios@3x.jpg",
+      "filename" : "morretes@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
