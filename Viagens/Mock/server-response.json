@@ -1,6 +1,6 @@
 {
-        "trips": {
-            "Highlights": [{
+        "travels": {
+            "highlights": [{
                 "id": 1,
                 "title": "Natal",
                 "subtitle": "Aéreo + Hotel com café da manhã",
@@ -21,7 +21,7 @@
                     "price": 734,
                     "cancellation": "Cancelamento Grátis"
             },
-            {    "id": 3,
+            {   "id": 3,
                 "title": "Porto de Galinhas",
                 "subtitle": "Aéreo + Hotel com café da manhã",
                 "image": "galinhas",
@@ -42,7 +42,7 @@
                 "cancellation": "Cancelamento não reembolsável"
             }
         ],
-            "Deals": [{
+            "deals": [{
                 "id": 5,
                 "title": "Barcelona",
                 "subtitle": "Aéreo + Hotel",
