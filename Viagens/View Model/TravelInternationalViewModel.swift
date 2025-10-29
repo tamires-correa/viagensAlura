@@ -7,6 +7,22 @@
 
 import Foundation
 
-class TravelInternationalViewModel {
+struct TravelInternationalViewModel: TravelViewModel {
+    var sectionTitle: String {
+        "Internacionais"
+    }
     
+    var type: TravelViewModelType {
+        .international
+    }
+    
+    var travels: [Travel]
+    
+    var numberOfRows: Int {
+        travels.count
+    }
+    
+    init(travels: [Travel]) {
+        self.travels = travels
+    }
 }

@@ -30,7 +30,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let tripCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") else {
-            fatalError("error to create TableViewCell")
+            fatalError("Error to create TableViewCell")
         }
         
         return tripCell

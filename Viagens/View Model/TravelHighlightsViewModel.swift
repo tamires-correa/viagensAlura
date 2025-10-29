@@ -7,6 +7,24 @@
 
 import Foundation
 
-class TravelHighlightsViewModel {
+struct TravelHighlightsViewModel: TravelViewModel {
+    var sectionTitle: String{
+        "Destaques"
+    }
     
+    var type: TravelViewModelType {
+        .highlights
+    }
+    
+    var travels: [Travel]
+    
+    var numberOfRows: Int{
+        travels.count
+    }
+    
+    init(_ travels: [Travel]) {
+        self.travels = travels
+    }
 }
+
+

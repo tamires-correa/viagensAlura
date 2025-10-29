@@ -6,6 +6,22 @@
 //
 
 import Foundation
-class TravelDealsViewModel{
+struct TravelDealsViewModel: TravelViewModel{
+    var sectionTitle: String {
+        "Ofertas"
+    }
     
+    var type: TravelViewModelType {
+        .deals
+    }
+    
+    var travels: [Travel]
+    
+    var numberOfRows: Int{
+        travels.count
+    }
+    
+    init(travels: [Travel]) {
+        self.travels = travels
+    }
 }
