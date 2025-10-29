@@ -8,7 +8,7 @@
 import Foundation
 
 struct TravelTypes: Decodable {
-    let highLights: [Travel]?
+    let highlights: [Travel]?
     let deals: [Travel]?
     let international: [Travel]?
 }
