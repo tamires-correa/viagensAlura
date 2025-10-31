@@ -42,16 +42,3 @@ class TravelService {
         }
     }
 }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}

@@ -10,9 +10,22 @@
 		C0A3AB432EA5A7FB00827CD0 /* Viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viagens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C0B55A352EB55081003E421C /* Exceptions for "Viagens" folder in "Viagens" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C0A3AB422EA5A7FB00827CD0 /* Viagens */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C0A3AB452EA5A7FB00827CD0 /* Viagens */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C0B55A352EB55081003E421C /* Exceptions for "Viagens" folder in "Viagens" target */,
+			);
 			path = Viagens;
 			sourceTree = "<group>";
 		};

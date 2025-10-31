@@ -84,7 +84,7 @@
                 "cancellation": "Cancelamento não reembolsável"
             }
         ],
-            "International": [{
+            "international": [{
                 "id": 9,
                 "title": "Cancún",
                 "subtitle": "Aéreo + Hotel All Inclusive",

@@ -22,5 +22,4 @@ class HomeTableViewHeader: UIView {
         bannerView.layer.cornerRadius = 10
         bannerView.layer.masksToBounds = true
     }
-
 }

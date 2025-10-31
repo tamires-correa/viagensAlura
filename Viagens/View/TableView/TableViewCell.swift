@@ -9,6 +9,27 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    //MARK: Outlets
+    @IBOutlet weak var backgroundViewCell: UIView!
+    @IBOutlet weak var tripImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var nightsLabel: UILabel!
+    @IBOutlet weak var originalPriceLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var tripStatusLabel: UILabel!
+    
+    func settingsCell(_ travel: Travel){
+        tripImage.image = UIImage(named: travel.image)
+        titleLabel.text = travel.title
+        subtitleLabel.text = travel.subtitle
+        nightsLabel.text = "\(travel.nights) noites"
+        originalPriceLabel.text = "R$ \(travel.originalPrice)"
+        priceLabel.text = "R$ \(travel.price)"
+        tripStatusLabel.text = travel.cancellation
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,5 +40,4 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }

@@ -22,7 +22,7 @@ struct TravelInternationalViewModel: TravelViewModel {
         travels.count
     }
     
-    init(travels: [Travel]) {
+    init(_ travels: [Travel]) {
         self.travels = travels
     }
 }
