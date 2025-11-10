@@ -26,7 +26,7 @@ class ViewController: UIViewController{
             sections = viewModels
             tripTableView.reloadData()
         } else {
-            print("Error loading travels")
+            print("Failed to load travels")
         }
     }
 }
