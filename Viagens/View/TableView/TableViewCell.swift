@@ -19,7 +19,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var tripStatusLabel: UILabel!
     
-    func settingsCell(_ travel: Travel){
+    func configureCell(_ travel: Travel){
         tripImage.image = UIImage(named: travel.image)
         titleLabel.text = travel.title
         subtitleLabel.text = travel.subtitle
@@ -27,8 +27,11 @@ class TableViewCell: UITableViewCell {
         originalPriceLabel.text = "R$ \(travel.originalPrice)"
         priceLabel.text = "R$ \(travel.price)"
         tripStatusLabel.text = travel.cancellation
+        
+        originalPriceLabel.text = travel.originalPrice.toCurreny()
+        priceLabel.text = travel.price.toCurreny()
+        
     }
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,7 +40,5 @@ class TableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 }

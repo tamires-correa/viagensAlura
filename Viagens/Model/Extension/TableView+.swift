@@ -6,14 +6,15 @@
 //
 
 import UIKit
-// MARK: - Setup
+
+// MARK: - TableView Setup
 extension ViewController{
     func setupTableView(){
-        settingsTableView()
+        configureTableView()
         setupHeader()
     }
   
-    private func settingsTableView() {
+    private func configureTableView() {
         tripTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
         tripTableView.dataSource = self
         tripTableView.delegate = self
@@ -21,7 +22,7 @@ extension ViewController{
     
     private func setupHeader(){
         guard let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: self, options: nil)?.first as? HomeTableViewHeader else {
-            return
+            return 
         }
              headerView.settingsHeaderView()
              headerView.frame = CGRect(x: 0, y: 0, width: tripTableView.frame.width, height: 300)
@@ -42,10 +43,11 @@ extension ViewController: UITableViewDataSource{
         }
         let viewModel = sections[indexPath.section]
         let travel = viewModel.travels[indexPath.row]
-        cell.settingsCell(travel)
+        cell.configureCell(travel)
         return cell
     }
 }
+
 //MARK: - UITableViewDelegate
 extension ViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
