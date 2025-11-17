@@ -4,8 +4,8 @@
 //
 //  Created by Tamires Corrêa on 14/11/25.
 //
+import UIKit
 
-import Foundation
 extension Double{
     func toCurrency() -> String {
         let formatter = NumberFormatter()
@@ -20,5 +20,12 @@ extension Double{
 //            formatter.maximumFractionDigits = 2
 //        }
         return formatter.string(from: NSNumber(value: self)) ?? "R$ 0"
+    }
+    
+    func toStrikethroughCurrecy() -> NSAttributedString{
+        let originalPriceText = self.toCurrency()
+        let attributedString = NSMutableAttributedString(string: originalPriceText)
+        attributedString.addAttribute(.strikethroughStyle, value: 1, range: NSRange(location: 0, length: attributedString.length))
+        return attributedString
     }
 }

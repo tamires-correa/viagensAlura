@@ -17,4 +17,10 @@ struct Travel: Decodable{
     let originalPrice: Double
     let price: Double
     let cancellation: String
+    
+    var settingsNightLabel: String{
+        let nightsText = nights == 1 ? "Noite" : "Noites"
+        let guestsText = guests == 1 ? "Hóspede" : "Hóspedes"
+        return "\(nights) \(nightsText) - \(guests) \(guestsText)"
+    }
 }

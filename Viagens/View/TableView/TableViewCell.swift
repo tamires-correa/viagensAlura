@@ -24,16 +24,15 @@ class TableViewCell: UITableViewCell {
         titleLabel.text = travel.title
         subtitleLabel.text = travel.subtitle
         nightsLabel.text = "\(travel.nights) noites"
-        originalPriceLabel.text = "R$ \(travel.originalPrice)"
         priceLabel.text = "R$ \(travel.price)"
         tripStatusLabel.text = travel.cancellation
         
         priceLabel.text = travel.price.toCurrency()
         
-        let originalPriceText = travel.originalPrice.toCurrency()
-        let attributedString = NSMutableAttributedString(string: originalPriceText)
-        attributedString.addAttribute(.strikethroughStyle, value: 1, range: NSRange(location: 0, length: attributedString.length))
-            originalPriceLabel.attributedText = attributedString
+        originalPriceLabel.attributedText = travel.originalPrice.toStrikethroughCurrecy()
+        
+        nightsLabel.text = travel.settingsNightLabel
+        
     }
     
     override func awakeFromNib() {
