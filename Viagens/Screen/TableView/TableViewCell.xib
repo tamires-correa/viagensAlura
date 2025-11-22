@@ -69,8 +69,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CANCELAMENTO GRÁTIS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVR-V1-EyB">
-                                <rect key="frame" x="10" y="367" width="128" height="17"/>
-                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="12"/>
+                                <rect key="frame" x="10" y="365" width="138.66666666666666" height="18.333333333333314"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="13"/>
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -87,7 +87,7 @@
                             <constraint firstItem="ONy-pC-PrE" firstAttribute="leading" secondItem="3AP-nI-BZw" secondAttribute="leading" constant="10" id="F51-43-AQh"/>
                             <constraint firstItem="1lw-SE-dOJ" firstAttribute="leading" secondItem="3Nk-nj-fI6" secondAttribute="trailing" constant="10" id="IHZ-9d-R3v"/>
                             <constraint firstItem="za6-xV-o1S" firstAttribute="leading" secondItem="yJn-pT-qJz" secondAttribute="trailing" constant="10" id="Lmw-WS-7Sh"/>
-                            <constraint firstItem="vVR-V1-EyB" firstAttribute="top" secondItem="yJn-pT-qJz" secondAttribute="bottom" constant="5" id="M2M-MC-2o8"/>
+                            <constraint firstItem="vVR-V1-EyB" firstAttribute="top" secondItem="yJn-pT-qJz" secondAttribute="bottom" constant="3" id="M2M-MC-2o8"/>
                             <constraint firstAttribute="trailing" secondItem="ykb-Rn-yOl" secondAttribute="trailing" constant="10" id="Pml-Zv-0Xu"/>
                             <constraint firstItem="7qb-GU-xeM" firstAttribute="leading" secondItem="3AP-nI-BZw" secondAttribute="leading" id="TnF-zd-Wow"/>
                             <constraint firstItem="3Nk-nj-fI6" firstAttribute="top" secondItem="ykb-Rn-yOl" secondAttribute="bottom" constant="15" id="WW6-m9-KDn"/>
@@ -129,10 +129,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.55294117647058827" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

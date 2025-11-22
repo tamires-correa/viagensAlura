@@ -9,7 +9,7 @@
                 "guests": 1,
                 "originalPrice": 1284,
                 "price": 899,
-                "cancellation": "Cancelamento não reembolsável"
+                "cancellation": "CANCELAMENTO NÃO REEMBOLSÁVEL"
             },
             {    "id": 2,
                     "title": "Bonito",
@@ -19,7 +19,7 @@
                     "guests": 2,
                     "originalPrice": 1048,
                     "price": 734,
-                    "cancellation": "Cancelamento Grátis"
+                    "cancellation": "CANCELAMENTO GRÁTIS"
             },
             {   "id": 3,
                 "title": "Porto de Galinhas",
@@ -29,7 +29,7 @@
                 "guests": 1,
                 "originalPrice": 1078.70,
                 "price": 809,
-                "cancellation": "Cancelamento Grátis"
+                "cancellation": "CANCELAMENTO GRÁTIS"
             },
             { "id": 4,
                 "title": "Morretes",
@@ -39,7 +39,7 @@
                 "guests": 2,
                 "originalPrice": 2508,
                 "price": 1100,
-                "cancellation": "Cancelamento não reembolsável"
+                "cancellation": "CANCELAMENTO NÃO REEMBOLSÁVEL"
             }
         ],
             "deals": [{
@@ -51,7 +51,7 @@
                 "guests": 2,
                 "originalPrice": 12678.55,
                 "price": 5809,
-                "cancellation": "Cancelamento não reembolsável"
+                "cancellation": "CANCELAMENTO NÃO REEMBOLSÁVEL"
             },
             {  "id": 6,
                 "title": "Beto Carrero World",
@@ -61,7 +61,7 @@
                 "guests": 1,
                 "originalPrice": 2898.60,
                 "price": 1445,
-                "cancellation": "Cancelamento Grátis"
+                "cancellation": "CANCELAMENTO GRÁTIS"
             },
             {   "id": 7,
                 "title": "São Luís",
@@ -71,7 +71,7 @@
                 "guests": 1,
                 "originalPrice": 1734,
                 "price": 800,
-                "cancellation": "Cancelamento Grátis"
+                "cancellation": "CANCELAMENTO GRÁTIS"
             },
             {   "id": 8,
                 "title": "Campos do Jordão",
@@ -81,7 +81,7 @@
                 "guests": 2,
                 "originalPrice": 2940,
                 "price": 1370,
-                "cancellation": "Cancelamento não reembolsável"
+                "cancellation": "CANCELAMENTO NÃO REEMBOLSÁVEL"
             }
         ],
             "international": [{
@@ -93,7 +93,7 @@
                 "guests": 2,
                 "originalPrice": 15873.73,
                 "price": 9660,
-                "cancellation": "Cancelamento não reembolsável"
+                "cancellation": "CANCELAMENTO NÃO REEMBOLSÁVEL"
             },
             {   "id": 10,
                 "title": "Maldivas",
@@ -103,7 +103,7 @@
                 "guests": 2,
                 "originalPrice": 7590,
                 "price": 4200,
-                "cancellation": "Cancelamento Grátis"
+                "cancellation": "CANCELAMENTO GRÁTIS"
             },
             {   "id": 11,
                 "title": "Disney Orlando",
@@ -113,7 +113,7 @@
                 "guests": 1,
                 "originalPrice": 8200,
                 "price": 5340,
-                "cancellation": "Cancelamento não reembolsável"
+                "cancellation": "CANCELAMENTO NÃO REEMBOLSÁVEL"
             },
             {   "id": 12,
                 "title": "Santiago",
@@ -123,7 +123,7 @@
                 "guests": 1,
                 "originalPrice": 2865,
                 "price": 1000,
-                "cancellation": "Cancelamento Grátis"
+                "cancellation": "CANCELAMENTO GRÁTIS"
             }
         ]
     }

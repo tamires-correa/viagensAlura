@@ -32,12 +32,11 @@ class TableViewCell: UITableViewCell {
         originalPriceLabel.attributedText = travel.originalPrice.toStrikethroughCurrecy()
         
         nightsLabel.text = travel.settingsNightLabel
-        
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        backgroundViewCell.addShadow()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
