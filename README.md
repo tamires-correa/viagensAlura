@@ -1,9 +1,26 @@
 # Viagens ✈️
 ![Static Badge](https://img.shields.io/badge/Status%3A-Em%20constru%C3%A7%C3%A3o-gray--green%20)
 
-Aplicativo desenvolvido sobre viagens no curso da Alura
+
+## **Sobre o Aplicativo:**
+**Viagens** é um aplicativo iOS desenvolvido, no curso da Alura, em Swift utilizando UIKit para exibir pacotes de viagem organizados de forma clara e intuitiva. A estrutura do projeto faz uso de ViewModels para separar a lógica de apresentação, enquanto os dados dos pacotes são carregados a partir de arquivos JSON.
+A interface é construída com UITableView e células customizadas, oferecendo uma experiência moderna, fluida e adaptável a diferentes dispositivos.
+
+## **Funcionalidades:**
+* Exibição de pacotes de viagem organizados em seções.
+
+* Carregamento de dados via arquivos JSON.
+
+* Uso de ViewModels para organização da lógica e apresentação.
+
+* UITableView com células customizadas.
+
+* Formatação de valores em moeda e exibição de preços promocionais.
+
+* Navegação simples e interface intuitiva.
 
 ## 🛠️ **Tecnologias Utilizadas:**
+
 
 * **IDE:** Xcode (Version 26.0.1)
 * **Linguagem:** Swift
