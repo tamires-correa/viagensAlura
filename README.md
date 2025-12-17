@@ -7,15 +7,17 @@
 A interface é construída com UITableView e células customizadas, oferecendo uma experiência moderna, fluida e adaptável a diferentes dispositivos.
 
 ## **Funcionalidades:**
-* Exibição de pacotes de viagem organizados em seções.
+* Exibição de pacotes de viagem organizados em seções;
 
-* Carregamento de dados via arquivos JSON.
+* Carregamento de dados via arquivos JSON;
 
-* Uso de ViewModels para organização da lógica e apresentação.
+* Uso de ViewModels para organização da lógica e apresentação;
 
-* UITableView com células customizadas.
+* UITableView com células customizadas;
 
-* Formatação de valores em moeda e exibição de preços promocionais.
+* Interface responsiva adaptada para iPhone e iPad;
+
+* Formatação de valores em moeda e exibição de preços promocionais;
 
 * Navegação simples e interface intuitiva.
 
