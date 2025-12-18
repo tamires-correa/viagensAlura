@@ -23,4 +23,13 @@ struct Travel: Decodable{
         let guestsText = guests == 1 ? "Hóspede" : "Hóspedes"
         return "\(nights) \(nightsText) - \(guests) \(guestsText)"
     }
+    
+    var isInternational: Bool {
+        let internationalDestinations = ["Barcelona", "Cancún", "Maldivas", "Disney Orlando", "Santiago"]
+        return internationalDestinations.contains(title)
+    }
+    
+    var isFreeCancel: Bool {
+        return cancellation.uppercased().contains("GRÁTIS")
+    }
 }
