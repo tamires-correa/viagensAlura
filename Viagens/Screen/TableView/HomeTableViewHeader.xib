@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeTableViewHeader" customModule="Viagens" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Okw-kU-dNB" userLabel="HeaderView">
@@ -75,14 +75,27 @@
                         <constraint firstAttribute="bottom" secondItem="5qO-yR-lcJ" secondAttribute="bottom" id="ul3-9p-xli"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pl-49-sNa">
+                    <rect key="frame" x="306" y="277" width="96" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Ordernar"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ia-vr-TpZ">
+                    <rect key="frame" x="217" y="277" width="75" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Filtro"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="01W-vU-tqs" firstAttribute="bottom" secondItem="Okw-kU-dNB" secondAttribute="bottom" constant="20" id="5GI-EC-A7Q"/>
                 <constraint firstItem="Okw-kU-dNB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AOI-dr-RlV"/>
+                <constraint firstItem="8pl-49-sNa" firstAttribute="leading" secondItem="2Ia-vr-TpZ" secondAttribute="trailing" constant="15" id="BEK-Za-1eP"/>
+                <constraint firstItem="8pl-49-sNa" firstAttribute="top" secondItem="01W-vU-tqs" secondAttribute="bottom" constant="7" id="F4x-JL-HPk"/>
                 <constraint firstItem="01W-vU-tqs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="Itu-B7-5pM"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="01W-vU-tqs" secondAttribute="trailing" constant="18" id="Ogw-x2-GYf"/>
+                <constraint firstItem="2Ia-vr-TpZ" firstAttribute="top" secondItem="01W-vU-tqs" secondAttribute="bottom" constant="7" id="WVg-6P-DJh"/>
                 <constraint firstItem="NRT-Fm-6aD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="gtV-IY-59G"/>
                 <constraint firstItem="Okw-kU-dNB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-10" id="hT6-DL-48D"/>
                 <constraint firstAttribute="trailing" secondItem="Okw-kU-dNB" secondAttribute="trailing" constant="-10" id="sis-Od-kQn"/>
@@ -91,7 +104,9 @@
             <connections>
                 <outlet property="bannerImage" destination="RUJ-Q2-ciL" id="NYp-d0-Sw0"/>
                 <outlet property="bannerView" destination="01W-vU-tqs" id="v08-Nh-fks"/>
+                <outlet property="filterButton" destination="2Ia-vr-TpZ" id="hvm-c2-Nbr"/>
                 <outlet property="headerView" destination="Okw-kU-dNB" id="OxM-UO-x09"/>
+                <outlet property="sortButton" destination="8pl-49-sNa" id="8b8-b9-S3W"/>
                 <outlet property="titleLabel" destination="NRT-Fm-6aD" id="LCE-py-jQY"/>
             </connections>
             <point key="canvasLocation" x="-103.81679389312977" y="90.845070422535215"/>

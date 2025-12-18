@@ -57,3 +57,13 @@ extension ViewController: UITableViewDelegate{
        print("Select trip: \(indexPath.row)")
     }
 }
+
+//MARK: - HomeTableViewHeaderDelegate
+extension ViewController: HomeTableViewHeaderDelegate{
+    func didTapFilterButton(){
+        showFilterOptions()
+    }
+    func didTapSortButton(){
+        showSortOptions()
+    }
+}
