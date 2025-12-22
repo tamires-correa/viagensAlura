@@ -24,9 +24,12 @@ extension ViewController{
         guard let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: self, options: nil)?.first as? HomeTableViewHeader else {
             return 
         }
-             headerView.settingsHeaderView()
-             headerView.frame = CGRect(x: 0, y: 0, width: tripTableView.frame.width, height: 300)
+        headerView.delegate = self
+        headerView.settingsHeaderView()
+        headerView.frame = CGRect(x: 0, y: 0, width: tripTableView.frame.width, height: 300)
              tripTableView.tableHeaderView = headerView
+        
+          
     }
 }
 //MARK: - UITableViewDataSource
@@ -60,10 +63,11 @@ extension ViewController: UITableViewDelegate{
 
 //MARK: - HomeTableViewHeaderDelegate
 extension ViewController: HomeTableViewHeaderDelegate{
-    func didTapFilterButton(){
-        showFilterOptions()
+    func didSelectFilter(_ filter: FilterType) {
+        print("Filtro selecionado:", filter)
     }
-    func didTapSortButton(){
-        showSortOptions()
+
+    func didSelectSort(_ sort: SortType) {
+        print("Ordenação selecionada:", sort)
     }
 }

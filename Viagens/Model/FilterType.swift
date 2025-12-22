@@ -7,15 +7,15 @@
 
 import Foundation
 
-enum FilterType{
-    case all
+enum FilterType: String, CaseIterable{
+    case all 
     case national
     case international
     case freeCancel
     case deals
 }
 
-enum sortType{
+enum SortType: String, CaseIterable{
     case lowPrice
     case highPrice
     case nameAz

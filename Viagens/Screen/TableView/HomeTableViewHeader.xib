@@ -75,13 +75,13 @@
                         <constraint firstAttribute="bottom" secondItem="5qO-yR-lcJ" secondAttribute="bottom" id="ul3-9p-xli"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pl-49-sNa">
-                    <rect key="frame" x="306" y="277" width="96" height="35"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pl-49-sNa">
+                    <rect key="frame" x="306.33333333333331" y="277" width="92.666666666666686" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="gray" title="Ordernar"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ia-vr-TpZ">
-                    <rect key="frame" x="217" y="277" width="75" height="35"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ia-vr-TpZ">
+                    <rect key="frame" x="229.00000000000003" y="277" width="62.333333333333343" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="gray" title="Filtro"/>
                 </button>
@@ -92,6 +92,7 @@
                 <constraint firstItem="01W-vU-tqs" firstAttribute="bottom" secondItem="Okw-kU-dNB" secondAttribute="bottom" constant="20" id="5GI-EC-A7Q"/>
                 <constraint firstItem="Okw-kU-dNB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AOI-dr-RlV"/>
                 <constraint firstItem="8pl-49-sNa" firstAttribute="leading" secondItem="2Ia-vr-TpZ" secondAttribute="trailing" constant="15" id="BEK-Za-1eP"/>
+                <constraint firstAttribute="trailing" secondItem="8pl-49-sNa" secondAttribute="trailing" constant="15" id="DFG-ga-vGa"/>
                 <constraint firstItem="8pl-49-sNa" firstAttribute="top" secondItem="01W-vU-tqs" secondAttribute="bottom" constant="7" id="F4x-JL-HPk"/>
                 <constraint firstItem="01W-vU-tqs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="Itu-B7-5pM"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="01W-vU-tqs" secondAttribute="trailing" constant="18" id="Ogw-x2-GYf"/>

@@ -7,9 +7,14 @@
 
 import UIKit
 
-class HomeTableViewHeader: UIView {
+protocol HomeTableViewHeaderDelegate: AnyObject{
+    func didSelectFilter(_ filter: FilterType)
+    func didSelectSort(_ sort: SortType)
+}
 
-//MARK: Outlets
+class HomeTableViewHeader: UIView {
+    
+    //MARK: Outlets
     @IBOutlet weak var bannerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var headerView: UIView!
@@ -17,6 +22,10 @@ class HomeTableViewHeader: UIView {
     @IBOutlet weak var filterButton: UIButton!
     @IBOutlet weak var sortButton: UIButton!
     
+    //MARK: Delegate
+    weak var delegate: HomeTableViewHeaderDelegate?
+    
+    //MARK: Setup
     func settingsHeaderView(){
         headerView.backgroundColor = UIColor(red: 30/255, green: 59/255, blue: 119/255, alpha: 1)
         headerView.layer.cornerRadius = 80
@@ -24,5 +33,7 @@ class HomeTableViewHeader: UIView {
         
         bannerView.layer.cornerRadius = 10
         bannerView.layer.masksToBounds = true
+        
+        setupButtons()
     }
 }
