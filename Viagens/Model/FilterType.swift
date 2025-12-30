@@ -8,7 +8,7 @@
 import Foundation
 
 enum FilterType: String, CaseIterable{
-    case all 
+    case all
     case national
     case international
     case freeCancel

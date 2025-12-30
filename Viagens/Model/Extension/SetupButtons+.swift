@@ -15,7 +15,7 @@ extension HomeTableViewHeader{
     }
     
     private func setupFilterButton(){
-        let actions = FilterType.allCases.map { filter in UIAction(title: filter.rawValue) { [weak self] _ in self?.delegate?.didSelectFilter(filter)
+        let actions = FilterType.allCases.map { filter in UIAction(title: filter.title) { [weak self] _ in self?.delegate?.didSelectFilter(filter)
         }
         }
         
@@ -26,8 +26,6 @@ extension HomeTableViewHeader{
         
         var settings = UIButton.Configuration.plain()
         settings.image = UIImage(systemName: "line.3.horizontal.decrease")
-//        settings.preferredSymbolConfigurationForImage =
-//            UIImage.SymbolConfiguration(pointSize: 19, weight: .medium)
         settings.baseForegroundColor = .black
         settings.background.backgroundColor = .systemGray5
         
@@ -36,7 +34,7 @@ extension HomeTableViewHeader{
     
     
     private func setupSortButton(){
-        let actions = SortType.allCases.map { sort in UIAction(title: sort.rawValue) { [weak self] _ in self?.delegate?.didSelectSort(sort)
+        let actions = SortType.allCases.map { sort in UIAction(title: sort.title) { [weak self] _ in self?.delegate?.didSelectSort(sort)
         }
         }
         let menu = UIMenu(title: "Ordenar", children: actions)
