@@ -24,8 +24,14 @@ extension HomeTableViewHeader{
         filterButton.menu = menu
         filterButton.showsMenuAsPrimaryAction = true
         
-        let image = UIImage(systemName: "line.3.horizontal.decrease")
-        filterButton.setImage(image, for: .normal)
+        var settings = UIButton.Configuration.plain()
+        settings.image = UIImage(systemName: "line.3.horizontal.decrease")
+//        settings.preferredSymbolConfigurationForImage =
+//            UIImage.SymbolConfiguration(pointSize: 19, weight: .medium)
+        settings.baseForegroundColor = .black
+        settings.background.backgroundColor = .systemGray5
+        
+        filterButton.configuration = settings
     }
     
     
