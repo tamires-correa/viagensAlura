@@ -19,4 +19,3 @@ protocol TravelViewModel {
     var travels: [Travel] { get set }
     var numberOfRows: Int { get }
 }
-

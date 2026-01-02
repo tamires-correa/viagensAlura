@@ -9,6 +9,7 @@ import Foundation
 
 enum FilterType: String, CaseIterable{
     case all
+    case highlights
     case national
     case international
     case freeCancel

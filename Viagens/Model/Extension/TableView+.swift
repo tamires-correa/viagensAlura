@@ -22,7 +22,7 @@ extension ViewController{
     
     private func setupHeader(){
         guard let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: self, options: nil)?.first as? HomeTableViewHeader else {
-            return 
+            return
         }
         headerView.delegate = self
         headerView.settingsHeaderView()
@@ -71,3 +71,4 @@ extension ViewController: HomeTableViewHeaderDelegate{
         print("Ordenação selecionada:", sort)
     }
 }
+

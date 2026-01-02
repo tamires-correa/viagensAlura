@@ -26,5 +26,3 @@ struct TravelHighlightsViewModel: TravelViewModel {
         self.travels = travels
     }
 }
-
-

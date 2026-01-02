@@ -11,8 +11,10 @@ import Foundation
 extension FilterType{
     var title: String {
         switch self{
-            case .all:
+        case .all:
             return "Todos"
+        case .highlights:
+            return "Destaques"
         case .national:
             return "Destinos Nacionais"
         case .international:

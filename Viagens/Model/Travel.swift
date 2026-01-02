@@ -18,6 +18,13 @@ struct Travel: Decodable{
     let price: Double
     let cancellation: String
     
+    var isDeal: Bool = false
+    var isHighlight: Bool = false
+    
+    enum CodingKeys: String, CodingKey {
+            case id, title, subtitle, image, nights, guests, originalPrice, price, cancellation
+        }
+    
     var settingsNightLabel: String{
         let nightsText = nights == 1 ? "Noite" : "Noites"
         let guestsText = guests == 1 ? "Hóspede" : "Hóspedes"

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 struct TravelDealsViewModel: TravelViewModel{
     var sectionTitle: String {
         "Ofertas"
