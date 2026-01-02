@@ -64,11 +64,14 @@ extension ViewController: UITableViewDelegate{
 //MARK: - HomeTableViewHeaderDelegate
 extension ViewController: HomeTableViewHeaderDelegate{
     func didSelectFilter(_ filter: FilterType) {
-        print("Filtro selecionado:", filter)
+        selectedFilter = filter
+        applyFilterAndSort()
+        print("Filtro aplicado:", filter.title)
     }
 
     func didSelectSort(_ sort: SortType) {
-        print("Ordenação selecionada:", sort)
+        selectedSort = sort
+        applyFilterAndSort()
+        print("Ordenação aplicada:", sort.title)
     }
 }
-

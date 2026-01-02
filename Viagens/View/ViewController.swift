@@ -13,6 +13,10 @@ class ViewController: UIViewController{
     
     var sections: [TravelViewModel] = []
     
+    var allSections: [TravelViewModel] = []
+    var selectedFilter: FilterType = .all
+    var selectedSort: SortType = .lowPrice
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
@@ -23,10 +27,15 @@ class ViewController: UIViewController{
     
     private func loadTravels(){
         if let viewModels = TravelService.loadTravels() {
-            sections = viewModels
-            tripTableView.reloadData()
+            allSections = viewModels
+            applyFilterAndSort()
         } else {
             print("Failed to load travels")
         }
+    }
+    
+    func applyFilterAndSort(){
+        sections = TripFilterAndSort.processSections(allSections: allSections, filter: selectedFilter, sort: selectedSort)
+            tripTableView.reloadData()
     }
 }
