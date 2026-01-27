@@ -32,6 +32,12 @@ class TableViewCell: UITableViewCell {
         originalPriceLabel.attributedText = travel.originalPrice.toStrikethroughCurrecy()
         
         nightsLabel.text = travel.settingsNightLabel
+        
+        if travel.isFreeCancel{
+            tripStatusLabel.textColor = .systemGreen
+        } else {
+            tripStatusLabel.textColor = .systemRed
+        }
     }
     
     override func awakeFromNib() {

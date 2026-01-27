@@ -28,8 +28,6 @@ extension ViewController{
         headerView.settingsHeaderView()
         headerView.frame = CGRect(x: 0, y: 0, width: tripTableView.frame.width, height: 300)
              tripTableView.tableHeaderView = headerView
-        
-          
     }
 }
 //MARK: - UITableViewDataSource
