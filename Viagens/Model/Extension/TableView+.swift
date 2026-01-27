@@ -21,13 +21,14 @@ extension ViewController{
     }
     
     private func setupHeader(){
-        guard let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: self, options: nil)?.first as? HomeTableViewHeader else {
+        guard let header = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: self, options: nil)?.first as? HomeTableViewHeader else {
             return
         }
-        headerView.delegate = self
-        headerView.settingsHeaderView()
-        headerView.frame = CGRect(x: 0, y: 0, width: tripTableView.frame.width, height: 300)
-             tripTableView.tableHeaderView = headerView
+        header.delegate = self
+        header.settingsHeaderView()
+        header.frame = CGRect(x: 0, y: 0, width: tripTableView.frame.width, height: 300)
+             tripTableView.tableHeaderView = header
+        self.headerView = header
     }
 }
 //MARK: - UITableViewDataSource

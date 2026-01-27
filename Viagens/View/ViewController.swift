@@ -12,10 +12,10 @@ class ViewController: UIViewController{
     @IBOutlet weak var tripTableView: UITableView!
     
     var sections: [TravelViewModel] = []
-    
     var allSections: [TravelViewModel] = []
     var selectedFilter: FilterType = .all
     var selectedSort: SortType = .lowPrice
+    var headerView: HomeTableViewHeader?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,5 +37,7 @@ class ViewController: UIViewController{
     func applyFilterAndSort(){
         sections = TripFilterAndSort.processSections(allSections: allSections, filter: selectedFilter, sort: selectedSort)
             tripTableView.reloadData()
+        headerView?.updateFilterMenu(currentFilter: selectedFilter)
+        headerView?.updateSortMenu(currentSort: selectedSort)
     }
 }

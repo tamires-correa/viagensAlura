@@ -14,32 +14,47 @@ extension HomeTableViewHeader{
         setupSortButton()
     }
     
-    private func setupFilterButton(){
-        let actions = FilterType.allCases.map { filter in UIAction(title: filter.title) { [weak self] _ in self?.delegate?.didSelectFilter(filter)
-        }
+//MARK: Filter Update
+    func updateFilterMenu(currentFilter: FilterType){
+        let actions = FilterType.allCases.map{filter in
+            let isSelected = (filter == currentFilter)
+            return UIAction(title: filter.title, state: isSelected ? .on : .off) { [weak self] _ in self?.delegate?.didSelectFilter(filter)
+            }
         }
         
         let menu = UIMenu(title: "", children: actions)
-        
         filterButton.menu = menu
-        filterButton.showsMenuAsPrimaryAction = true
-        
+    }
+
+//MARK: Sort Update
+    func updateSortMenu(currentSort: SortType){
+        let actions = SortType.allCases.map{sort in
+            let isSelected = (sort == currentSort)
+            return UIAction(title: sort.title, state: isSelected ? .on : .off) { [weak self] _ in self?.delegate?.didSelectSort(sort)
+            }
+        }
+    
+        let menu = UIMenu(title: "Ordenar", children: actions)
+        sortButton.menu = menu
+    }
+    
+//MARK: Initial Setup
+    private func setupFilterButton(){
         var settings = UIButton.Configuration.plain()
         settings.image = UIImage(systemName: "line.3.horizontal.decrease")
         settings.baseForegroundColor = .black
         settings.background.backgroundColor = .systemGray5
         
         filterButton.configuration = settings
+        filterButton.showsMenuAsPrimaryAction = true
+        
+        updateFilterMenu(currentFilter: .all)
     }
     
     
     private func setupSortButton(){
-        let actions = SortType.allCases.map { sort in UIAction(title: sort.title) { [weak self] _ in self?.delegate?.didSelectSort(sort)
-        }
-        }
-        let menu = UIMenu(title: "Ordenar", children: actions)
-        
-        sortButton.menu = menu
         sortButton.showsMenuAsPrimaryAction = true
+        
+        updateSortMenu(currentSort: .lowPrice)
     }
 }
