@@ -1,10 +1,9 @@
 # Viagens ✈️
 
 ### **Demonstração:** 
-![Demonstração do app] (readme_assents/demo-viagens.git)
-
-
-
+<div align="center">
+  <img src="readme_assets/demo-viagens.gif" alt="Meu GIF" width="350">
+</div>
 
 ---
 
