@@ -1,34 +1,58 @@
 # Viagens ✈️
-![Static Badge](https://img.shields.io/badge/Status%3A-Em%20constru%C3%A7%C3%A3o-gray--green%20)
+
+### **Demonstração:** 
+![Demonstração do app] (readme_assents/demo-viagens.git)
 
 
-## **Sobre o Aplicativo:**
-**Viagens** é um aplicativo iOS desenvolvido, no curso da Alura, em Swift utilizando UIKit para exibir pacotes de viagem organizados de forma clara e intuitiva. A estrutura do projeto faz uso de ViewModels para separar a lógica de apresentação, enquanto os dados dos pacotes são carregados a partir de arquivos JSON.
-A interface é construída com UITableView e células customizadas, oferecendo uma experiência moderna, fluida e adaptável a diferentes dispositivos.
 
-## **Funcionalidades:**
-* Exibição de pacotes de viagem organizados em seções;
+
+---
+
+### **Sobre o Aplicativo:**
+**Viagens** é um aplicativo iOS desenvolvido em Swift utilizando UIKit para exibir pacotes de viagem organizados em seções, com suporte a **filtros e ordenação**. O projeto utiliza **ViewModels** para separar responsabilidades e carrega os dados a partir de arquivos **JSON**, garantindo uma estrutura mais organizada.
+
+O app foi inspirado em um projeto apresentado em curso, porém recebeu **melhorias e personalizações**, incluindo: filtros, ordenação, ajustes visuais e expansão da base de dados.
+
+---
+
+### **Funcionalidades:**
+* Exibição de pacotes de viagem organizados em seções (Destaques, Ofertas e Internacionais);
+* Filtros por tipo de destino e política de cancelamento;
+* Ordenação por preço e ordem alfabética;
 
 * Carregamento de dados via arquivos JSON;
 
-* Uso de ViewModels para organização da lógica e apresentação;
+* Arquitetura baseada em ViewModels;
 
 * UITableView com células customizadas;
 
 * Interface responsiva adaptada para iPhone e iPad;
 
-* Formatação de valores em moeda e exibição de preços promocionais;
+* Formatação de valores em moeda (pt-BR);
 
 * Navegação simples e interface intuitiva.
 
-## 🛠️ **Tecnologias Utilizadas:**
+---
 
+### **Principais Melhorias Implementadas:**
+- Inclusão de botões de filtro e ordenação no header da tabela;
+- Lógica centralizada de filtro e ordenação dos pacotes;
+- Diferenciação visual para cancelamento grátis e não reembolsável;
+- Adição de novos destinos nacionais e internacionais;
+- Organização e reaproveitamento de código com extensions.
 
-* **IDE:** Xcode (Version 26.0.1)
+---
+
+### **Tecnologias Utilizadas:**
+
+* **IDE:** Xcode (Version 26.2)
 * **Linguagem:** Swift
 * **Frameworks:** UIKit
+* **Arquitetura:** MVVM (ViewModels)
 
-## 🚀 Como Rodar o Projeto
+---
+
+### **Como Rodar o Projeto:**
 
 **Pré-requisitos:**
 * macOS com Xcode instalado.
