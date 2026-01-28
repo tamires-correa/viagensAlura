@@ -2,7 +2,7 @@
 
 ### **Demonstração:** 
 <div align="center">
-  <img src="readme_assets/demo-viagens.gif" alt="Meu GIF" width="350">
+  <img src="readme_assets/demo-viagens.gif" alt="Meu GIF" width="400">
 </div>
 
 ---
